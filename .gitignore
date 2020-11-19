@@ -1,0 +1,6 @@
+*.o
+deps.mk
+videos
+*.ppm
+src/*.o
+src/utils/*.o

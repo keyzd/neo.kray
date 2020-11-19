@@ -1,0 +1,266 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a3c87ab5/
+ApplyRotations	ICamera.cpp	/^Vec3 ICamera::ApplyRotations( const Ray& ray ) const {$/;"	f	class:ICamera	typeref:typename:Vec3
+AtPoint	Ray.h	/^inline Vec3 Ray::AtPoint( float t ) const {$/;"	f	class:Ray	typeref:typename:Vec3
+Axis	ICamera.h	/^	enum Axis {$/;"	g	class:ICamera
+CAMERA_PINHOLE_H	CameraPinhole.h	/^#define CAMERA_PINHOLE_H$/;"	d
+CANVAS_H	Canvas.h	/^#define CANVAS_H$/;"	d
+CalculateLight	DefaultRenderer.cpp	/^Vec3 DefaultRenderer::CalculateLight( const Camera& camera, const Scene& scene, const Vec3& norm/;"	f	class:DefaultRenderer	typeref:typename:Vec3
+Camera	ICamera.h	/^typedef ICamera Camera;$/;"	t	typeref:typename:ICamera
+CameraPinhole	CameraPinhole.h	/^class CameraPinhole : public ICamera {$/;"	c
+CameraPinhole	CameraPinhole.h	/^inline CameraPinhole::CameraPinhole( uint32_t a_resWidth, uint32_t a_resHeight ) :$/;"	f	class:CameraPinhole
+Canvas	Canvas.cpp	/^Canvas::Canvas( uint32_t a_width, uint32_t a_height, const char* file_ppm_path ) {$/;"	f	class:Canvas
+Canvas	Canvas.h	/^class Canvas {$/;"	c
+Capacity	utils/List.h	/^unsigned int List<T>::Capacity() const {$/;"	f	class:List	typeref:typename:unsigned int
+Clear	utils/List.h	/^void List<T>::Clear() {$/;"	f	class:List	typeref:typename:void
+Count	utils/List.h	/^inline unsigned int List<T>::Count() const {$/;"	f	class:List	typeref:typename:unsigned int
+CountLight	IScene.h	/^inline uint32_t IScene::CountLight() const {$/;"	f	class:IScene	typeref:typename:uint32_t
+CountObjects	IScene.h	/^inline uint32_t IScene::CountObjects() const {$/;"	f	class:IScene	typeref:typename:uint32_t
+D	Ray.h	/^	Vec3 O, D;$/;"	m	class:Ray	typeref:typename:Vec3
+DEFAULT_RENDERER_H	DefaultRenderer.h	/^#define DEFAULT_RENDERER_H$/;"	d
+DefaultRenderer	DefaultRenderer.cpp	/^DefaultRenderer::DefaultRenderer() {$/;"	f	class:DefaultRenderer
+DefaultRenderer	DefaultRenderer.h	/^class DefaultRenderer : public IRenderer {$/;"	c
+Delete	IObject.h	/^inline void IObject::Delete() {$/;"	f	class:IObject	typeref:typename:void
+Diffuse	MaterialPhong.cpp	/^Vec3 MaterialPhong::Diffuse( const Vec3& normal, const Vec3& lightDir, const Vec3&  camDir ) con/;"	f	class:MaterialPhong	typeref:typename:Vec3
+Dot	Vec3.h	/^inline real_t Vec3::Dot(const Vec3 &v) const {$/;"	f	class:Vec3	typeref:typename:real_t
+FindAverage	DefaultRenderer.cpp	/^Vec3 FindAverage( List<Vec3> vecs ) {$/;"	f	typeref:typename:Vec3
+FindClosestObject	DefaultRenderer.cpp	/^Object* DefaultRenderer::FindClosestObject( const Ray& ray, const Scene& scene, const Camera& ca/;"	f	class:DefaultRenderer	typeref:typename:Object *
+FindClosestObject	IRenderer.cpp	/^Object* IRenderer::FindClosestObject( const Ray& ray, const Scene& scene, const Camera& camera,$/;"	f	class:IRenderer	typeref:typename:Object *
+GetBackgroundColor	IScene.h	/^inline Vec3 IScene::GetBackgroundColor() const {$/;"	f	class:IScene	typeref:typename:Vec3
+GetDiffuseCoefficient	IMaterial.h	/^inline real_t IMaterial::GetDiffuseCoefficient() const {$/;"	f	class:IMaterial	typeref:typename:real_t
+GetDirection	Ray.h	/^inline Vec3 Ray::GetDirection() const {$/;"	f	class:Ray	typeref:typename:Vec3
+GetFov	CameraPinhole.cpp	/^inline real_t CameraPinhole::GetFov() const {$/;"	f	class:CameraPinhole	typeref:typename:real_t
+GetHeight	Canvas.h	/^inline uint32_t Canvas::GetHeight() const {$/;"	f	class:Canvas	typeref:typename:uint32_t
+GetHeight	ObjectCylinder.h	/^inline real_t ObjectCylinder::GetHeight() const {$/;"	f	class:ObjectCylinder	typeref:typename:real_t
+GetIntensity	Light.h	/^inline real_t Light::GetIntensity() const {$/;"	f	class:Light	typeref:typename:real_t
+GetLightDirection	Light.h	/^inline Vec3 Light::GetLightDirection() const {$/;"	f	class:Light	typeref:typename:Vec3
+GetLightPosition	Light.h	/^inline Vec3 Light::GetLightPosition() const {$/;"	f	class:Light	typeref:typename:Vec3
+GetLightPtr	IScene.h	/^inline Light* IScene::GetLightPtr( uint32_t i ) const {$/;"	f	class:IScene	typeref:typename:Light *
+GetObjectPtr	IScene.h	/^inline Object* IScene::GetObjectPtr( uint32_t i ) const {$/;"	f	class:IScene	typeref:typename:Object *
+GetOrigin	ICamera.h	/^inline Vec3 ICamera::GetOrigin() const {$/;"	f	class:ICamera	typeref:typename:Vec3
+GetOrigin	Ray.h	/^inline Vec3 Ray::GetOrigin() const {$/;"	f	class:Ray	typeref:typename:Vec3
+GetPixel	Canvas.cpp	/^inline Vec3 Canvas::GetPixel( uint32_t x, uint32_t y ) const {$/;"	f	class:Canvas	typeref:typename:Vec3
+GetPosition	IObject.h	/^inline Vec3 IObject::GetPosition() const {$/;"	f	class:IObject	typeref:typename:Vec3
+GetProjPlaneDistance	ICamera.h	/^inline real_t ICamera::GetProjPlaneDistance() const {$/;"	f	class:ICamera	typeref:typename:real_t
+GetRadius	ObjectCylinder.h	/^inline real_t ObjectCylinder::GetRadius() const {$/;"	f	class:ObjectCylinder	typeref:typename:real_t
+GetRadius	ObjectSphere.h	/^real_t inline ObjectSphere::GetRadius() const {$/;"	f	class:ObjectSphere	typeref:typename:real_t
+GetRay	CameraPinhole.cpp	/^Ray CameraPinhole::GetRay( uint32_t canvasX, uint32_t canvasY ) const {$/;"	f	class:CameraPinhole	typeref:typename:Ray
+GetReflectivenessCoefficient	IMaterial.h	/^inline real_t IMaterial::GetReflectivenessCoefficient() const {$/;"	f	class:IMaterial	typeref:typename:real_t
+GetSpecularCoefficient	IMaterial.h	/^inline real_t IMaterial::GetSpecularCoefficient() const {$/;"	f	class:IMaterial	typeref:typename:real_t
+GetSpecularCoefficient	Light.h	/^inline real_t Light::GetSpecularCoefficient() const {$/;"	f	class:Light	typeref:typename:real_t
+GetSurfaceColor	IMaterial.h	/^inline Vec3 IMaterial::GetSurfaceColor() const {$/;"	f	class:IMaterial	typeref:typename:Vec3
+GetType	Light.h	/^inline LightType Light::GetType() const {$/;"	f	class:Light	typeref:typename:LightType
+GetWidth	Canvas.h	/^inline uint32_t Canvas::GetWidth() const {$/;"	f	class:Canvas	typeref:typename:uint32_t
+GetX	IObject.h	/^inline real_t IObject::GetX() const {$/;"	f	class:IObject	typeref:typename:real_t
+GetY	IObject.h	/^inline real_t IObject::GetY() const {$/;"	f	class:IObject	typeref:typename:real_t
+GetZ	IObject.h	/^inline real_t IObject::GetZ() const {$/;"	f	class:IObject	typeref:typename:real_t
+ICAMERA_H	ICamera.h	/^#define ICAMERA_H$/;"	d
+ICamera	ICamera.h	/^class ICamera {$/;"	c
+ICamera	ICamera.h	/^inline ICamera::ICamera( const uint32_t a_resWidth, const uint32_t a_resHeight ) {$/;"	f	class:ICamera
+IMATERIAL_H	IMaterial.h	/^#define IMATERIAL_H$/;"	d
+IMaterial	IMaterial.h	/^class IMaterial {$/;"	c
+IOBJECT_H	IObject.h	/^#define IOBJECT_H$/;"	d
+IObject	IObject.h	/^class IObject {$/;"	c
+IObject	IObject.h	/^inline IObject::IObject( const Vec3 &pos ) {$/;"	f	class:IObject
+IObject	IObject.h	/^inline IObject::IObject() {$/;"	f	class:IObject
+IRENDERER_H	IRenderer.h	/^#define IRENDERER_H$/;"	d
+IRenderer	IRenderer.h	/^class IRenderer {$/;"	c
+ISCENE_H	IScene.h	/^#define ISCENE_H$/;"	d
+IScene	IScene.h	/^class IScene {$/;"	c
+InitTimeLine	NeoKray.cpp	/^void NeoKray::InitTimeLine() {$/;"	f	class:NeoKray	typeref:typename:void
+Intersect	ObjectCylinder.cpp	/^bool ObjectCylinder::Intersect( const Ray& ray, Vec3& intersect_at ) const {$/;"	f	class:ObjectCylinder	typeref:typename:bool
+Intersect	ObjectPlane.cpp	/^bool ObjectPlane::Intersect( const Ray &ray, Vec3 &intersect_at ) const {$/;"	f	class:ObjectPlane	typeref:typename:bool
+Intersect	ObjectSphere.cpp	/^bool ObjectSphere::Intersect( const Ray &ray, Vec3 &intersect_at ) const {$/;"	f	class:ObjectSphere	typeref:typename:bool
+LIGHT_H	Light.h	/^#define LIGHT_H$/;"	d
+LIST_H	utils/List.h	/^#define LIST_H$/;"	d
+Length	Vec3.h	/^inline real_t Vec3::Length() const {$/;"	f	class:Vec3	typeref:typename:real_t
+Light	Light.h	/^	Light( LightType atype ) { type = atype; }$/;"	f	class:Light
+Light	Light.h	/^class Light {$/;"	c
+LightType	Light.h	/^enum LightType {$/;"	g
+List	utils/List.h	/^List<T>::List( const List &list ) {$/;"	f	class:List
+List	utils/List.h	/^List<T>::List() {$/;"	f	class:List
+List	utils/List.h	/^class List {$/;"	c
+MATERIAL_GLASS_H	MaterialGlass.h	/^#define MATERIAL_GLASS_H$/;"	d
+MATERIAL_NORMAL_MAP	MaterialNormalMap.h	/^#define MATERIAL_NORMAL_MAP$/;"	d
+MATERIAL_PHONG_H	MaterialPhong.h	/^#define MATERIAL_PHONG_H$/;"	d
+MainLoop	NeoKray.cpp	/^void NeoKray::MainLoop() {$/;"	f	class:NeoKray	typeref:typename:void
+MakeImage	DefaultRenderer.cpp	/^void DefaultRenderer::MakeImage( Canvas& canvas, const Scene& scene, const Camera& camera ) {$/;"	f	class:DefaultRenderer	typeref:typename:void
+Material	IMaterial.h	/^typedef IMaterial Material;$/;"	t	typeref:typename:IMaterial
+MaterialGlass	MaterialGlass.h	/^class MaterialGlass : public IMaterial {$/;"	c
+MaterialNormalMap	MaterialNormalMap.h	/^class MaterialNormalMap : public IMaterial {$/;"	c
+MaterialPhong	MaterialPhong.h	/^class MaterialPhong : public IMaterial {$/;"	c
+NEO_KRAY_H	NeoKray.h	/^#define NEO_KRAY_H$/;"	d
+NeoKray	NeoKray.cpp	/^NeoKray::NeoKray( int argc, char *argv[] ) {$/;"	f	class:NeoKray
+NeoKray	NeoKray.h	/^class NeoKray {$/;"	c
+NormalAt	ObjectCylinder.cpp	/^Vec3 ObjectCylinder::NormalAt( const Vec3 &intersect_at ) const {$/;"	f	class:ObjectCylinder	typeref:typename:Vec3
+NormalAt	ObjectPlane.cpp	/^Vec3 ObjectPlane::NormalAt( const Vec3 &intersect_at ) const {$/;"	f	class:ObjectPlane	typeref:typename:Vec3
+NormalAt	ObjectSphere.cpp	/^Vec3 ObjectSphere::NormalAt( const Vec3 &intersect_at ) const {$/;"	f	class:ObjectSphere	typeref:typename:Vec3
+Normalize	Vec3.h	/^inline Vec3 Vec3::Normalize() const {$/;"	f	class:Vec3	typeref:typename:Vec3
+O	Ray.h	/^	Vec3 O, D;$/;"	m	class:Ray	typeref:typename:Vec3
+OBJECT_CYLINDER_H	ObjectCylinder.h	/^#define OBJECT_CYLINDER_H$/;"	d
+OBJECT_PLANE_H	ObjectPlane.h	/^#define OBJECT_PLANE_H$/;"	d
+OBJECT_SPHERE_H	ObjectSphere.h	/^#define OBJECT_SPHERE_H$/;"	d
+Object	IObject.h	/^typedef IObject Object;$/;"	t	typeref:typename:IObject
+ObjectCylinder	ObjectCylinder.h	/^class ObjectCylinder : public IObject {$/;"	c
+ObjectCylinder	ObjectCylinder.h	/^inline ObjectCylinder::ObjectCylinder( const Vec3& pos, const real_t rad, const real_t a_height /;"	f	class:ObjectCylinder
+ObjectCylinder	ObjectCylinder.h	/^inline ObjectCylinder::ObjectCylinder() {$/;"	f	class:ObjectCylinder
+ObjectPlane	ObjectPlane.h	/^class ObjectPlane : public IObject {$/;"	c
+ObjectPlane	ObjectPlane.h	/^inline ObjectPlane::ObjectPlane( const Vec3& a_pos, const Vec3& a_normal, const Vec3& a_r ) {$/;"	f	class:ObjectPlane
+ObjectPlane	ObjectPlane.h	/^inline ObjectPlane::ObjectPlane() {$/;"	f	class:ObjectPlane
+ObjectSphere	ObjectSphere.h	/^class ObjectSphere : public IObject {$/;"	c
+ObjectSphere	ObjectSphere.h	/^inline ObjectSphere::ObjectSphere( const Vec3 &pos, const real_t rad ) :$/;"	f	class:ObjectSphere
+ObjectSphere	ObjectSphere.h	/^inline ObjectSphere::ObjectSphere() {$/;"	f	class:ObjectSphere
+PAIR_H	utils/Pair.h	/^#define PAIR_H$/;"	d
+Pair	utils/Pair.h	/^struct Pair {$/;"	s
+Push	utils/List.h	/^void List<T>::Push( T item ) {$/;"	f	class:List	typeref:typename:void
+RAY_H	Ray.h	/^#define RAY_H$/;"	d
+Ray	Ray.h	/^class Ray {$/;"	c
+Ray	Ray.h	/^inline Ray::Ray( const Vec3& origin, const Vec3& direction ) {$/;"	f	class:Ray
+RayTrace	DefaultRenderer.cpp	/^Vec3 DefaultRenderer::RayTrace( const Ray& ray, const Scene& scene, const Camera& camera ) {$/;"	f	class:DefaultRenderer	typeref:typename:Vec3
+ReadCmdArgs	NeoKray.cpp	/^void NeoKray::ReadCmdArgs( int argc, char *argv[] ) {$/;"	f	class:NeoKray	typeref:typename:void
+Reflect	Vec3.h	/^inline Vec3 Vec3::Reflect(Vec3 n) const {$/;"	f	class:Vec3	typeref:typename:Vec3
+Renderer	IRenderer.h	/^typedef IRenderer Renderer;$/;"	t	typeref:typename:IRenderer
+ResetCount	utils/List.h	/^void List<T>::ResetCount() {$/;"	f	class:List	typeref:typename:void
+RotateYX	ICamera.cpp	/^void ICamera::RotateYX( const real_t a ) {$/;"	f	class:ICamera	typeref:typename:void
+RotateYZ	ICamera.cpp	/^void ICamera::RotateYZ( const real_t a ) {$/;"	f	class:ICamera	typeref:typename:void
+RotateZX	ICamera.cpp	/^void ICamera::RotateZX( const real_t a ) {$/;"	f	class:ICamera	typeref:typename:void
+SHADE_RECORD_H	ShaderRecord.h	/^#define SHADE_RECORD_H$/;"	d
+Scene	IScene.h	/^typedef IScene Scene;$/;"	t	typeref:typename:IScene
+SetBackgroundColor	IScene.h	/^inline void IScene::SetBackgroundColor( const Vec3 &a_bgcolor ) {$/;"	f	class:IScene	typeref:typename:void
+SetDiffuseCoefficient	IMaterial.h	/^inline void IMaterial::SetDiffuseCoefficient( real_t coeff ) {$/;"	f	class:IMaterial	typeref:typename:void
+SetDirection	Ray.h	/^inline void Ray::SetDirection( Vec3 d ) {$/;"	f	class:Ray	typeref:typename:void
+SetFov	CameraPinhole.cpp	/^void CameraPinhole::SetFov( real_t a_fov ) {$/;"	f	class:CameraPinhole	typeref:typename:void
+SetHeight	ObjectCylinder.h	/^inline void ObjectCylinder::SetHeight( const real_t a_height ) {$/;"	f	class:ObjectCylinder	typeref:typename:void
+SetIntensity	Light.h	/^inline void Light::SetIntensity( real_t a_intensity ) {$/;"	f	class:Light	typeref:typename:void
+SetLight	IScene.h	/^inline void IScene::SetLight( Light *light ) {$/;"	f	class:IScene	typeref:typename:void
+SetLightDirection	Light.h	/^inline void Light::SetLightDirection( const Vec3 &a_direction ) {$/;"	f	class:Light	typeref:typename:void
+SetLightPosition	Light.h	/^inline void Light::SetLightPosition( const Vec3 &a_position ) {$/;"	f	class:Light	typeref:typename:void
+SetNormal	ObjectPlane.h	/^inline void ObjectPlane::SetNormal( const Vec3& a_normal ) {$/;"	f	class:ObjectPlane	typeref:typename:void
+SetObject	IScene.h	/^inline void IScene::SetObject( Object *object ) {$/;"	f	class:IScene	typeref:typename:void
+SetOrigin	ICamera.h	/^inline void ICamera::SetOrigin( const Vec3& a_origin ) {$/;"	f	class:ICamera	typeref:typename:void
+SetOrigin	Ray.h	/^inline void Ray::SetOrigin( Vec3 o ) {$/;"	f	class:Ray	typeref:typename:void
+SetPair	utils/Pair.h	/^void Pair<T1, T2>::SetPair( T1 a_el1, T2 a_el2 ) {$/;"	f	class:Pair	typeref:typename:void
+SetPixel	Canvas.cpp	/^void Canvas::SetPixel( Vec3 pixel, uint32_t x, uint32_t y ) {$/;"	f	class:Canvas	typeref:typename:void
+SetPosition	IObject.h	/^inline void IObject::SetPosition( const Vec3 &pos ) {$/;"	f	class:IObject	typeref:typename:void
+SetR	ObjectPlane.h	/^inline void ObjectPlane::SetR( const Vec3& a_r ) {$/;"	f	class:ObjectPlane	typeref:typename:void
+SetRadius	ObjectCylinder.h	/^inline void ObjectCylinder::SetRadius( const real_t rad ) {$/;"	f	class:ObjectCylinder	typeref:typename:void
+SetRadius	ObjectSphere.h	/^void inline ObjectSphere::SetRadius( const real_t rad ) {$/;"	f	class:ObjectSphere	typeref:typename:void
+SetReflectivenessCoefficient	IMaterial.h	/^inline void IMaterial::SetReflectivenessCoefficient( real_t coeff ) {$/;"	f	class:IMaterial	typeref:typename:void
+SetSpecularCoefficient	IMaterial.h	/^inline void IMaterial::SetSpecularCoefficient( real_t coeff ) {$/;"	f	class:IMaterial	typeref:typename:void
+SetSpecularCoefficient	Light.h	/^inline void Light::SetSpecularCoefficient( real_t a_coeff ) {$/;"	f	class:Light	typeref:typename:void
+SetSurfaceColor	IMaterial.h	/^inline void IMaterial::SetSurfaceColor( const Vec3& a_color ) {$/;"	f	class:IMaterial	typeref:typename:void
+Shade	MaterialGlass.cpp	/^Vec3 MaterialGlass::Shade( const Vec3& normal, Light* l, const Vec3& lightDir,$/;"	f	class:MaterialGlass	typeref:typename:Vec3
+Shade	MaterialNormalMap.cpp	/^Vec3 MaterialNormalMap::Shade( const Vec3& normal, Light* l, const Vec3& lightDir,$/;"	f	class:MaterialNormalMap	typeref:typename:Vec3
+Shade	MaterialPhong.cpp	/^Vec3 MaterialPhong::Shade( const Vec3& normal, Light* l, const Vec3& lightDir,$/;"	f	class:MaterialPhong	typeref:typename:Vec3
+ShadeRecord	ShaderRecord.h	/^struct ShadeRecord {$/;"	s
+Specular	MaterialPhong.cpp	/^Vec3 MaterialPhong::Specular( const Vec3& normal, const Vec3& lightDir, const Vec3&  camDir,$/;"	f	class:MaterialPhong	typeref:typename:Vec3
+VEC3_H	Vec3.h	/^#define VEC3_H$/;"	d
+Vec3	Vec3.h	/^class Vec3 {$/;"	c
+Vec3	Vec3.h	/^inline Vec3::Vec3() {$/;"	f	class:Vec3
+Vec3	Vec3.h	/^inline Vec3::Vec3(real_t a) {$/;"	f	class:Vec3
+Vec3	Vec3.h	/^inline Vec3::Vec3(real_t a_x, real_t a_y, real_t a_z) {$/;"	f	class:Vec3
+WriteBufferToFile	Canvas.cpp	/^void Canvas::WriteBufferToFile() {$/;"	f	class:Canvas	typeref:typename:void
+WritePixelToFile	Canvas.cpp	/^void Canvas::WritePixelToFile( Vec3 pixel ) {$/;"	f	class:Canvas	typeref:typename:void
+YX	ICamera.h	/^		YX, YZ, ZX$/;"	e	enum:ICamera::Axis
+YZ	ICamera.h	/^		YX, YZ, ZX$/;"	e	enum:ICamera::Axis
+ZX	ICamera.h	/^		YX, YZ, ZX$/;"	e	enum:ICamera::Axis
+_RotateYX	ICamera.cpp	/^void ICamera::_RotateYX( const real_t aRad, Vec3& dir ) const {$/;"	f	class:ICamera	typeref:typename:void
+_RotateYZ	ICamera.cpp	/^void ICamera::_RotateYZ( const real_t aRad, Vec3& dir ) const {$/;"	f	class:ICamera	typeref:typename:void
+_RotateZX	ICamera.cpp	/^void ICamera::_RotateZX( const real_t aRad, Vec3& dir ) const {$/;"	f	class:ICamera	typeref:typename:void
+__anond7d57e8c010a	Vec3.h	/^	union {$/;"	u	class:Vec3
+__anond7d57e8c0208	Vec3.h	/^		struct { real_t x, y, z; };$/;"	s	union:Vec3::__anond7d57e8c010a
+__anond7d57e8c0308	Vec3.h	/^		struct { real_t r, g, b; };$/;"	s	union:Vec3::__anond7d57e8c010a
+aaParams	DefaultRenderer.h	/^	List<Pair<real_t, real_t>> aaParams;$/;"	m	class:DefaultRenderer	typeref:typename:List<Pair<real_t,real_t>>
+aaSamplesCount	DefaultRenderer.h	/^	uint32_t aaSamplesCount;$/;"	m	class:DefaultRenderer	typeref:typename:uint32_t
+ambient	Light.h	/^	ambient, point, directional$/;"	e	enum:LightType
+b	Vec3.h	/^		struct { real_t r, g, b; };$/;"	m	struct:Vec3::__anond7d57e8c010a::__anond7d57e8c0308	typeref:typename:real_t
+bg_color	IScene.h	/^	Vec3 bg_color;$/;"	m	class:IScene	typeref:typename:Vec3
+buf	utils/List.h	/^	T *buf;$/;"	m	class:List	typeref:typename:T *
+camDir	ShaderRecord.h	/^	Vec3 camDir;$/;"	m	struct:ShadeRecord	typeref:typename:Vec3
+capacity	utils/List.h	/^	unsigned int capacity;$/;"	m	class:List	typeref:typename:unsigned int
+count	utils/List.h	/^	unsigned int count;$/;"	m	class:List	typeref:typename:unsigned int
+currentTimeMs	NeoKray.h	/^	double currentTimeMs;$/;"	m	class:NeoKray	typeref:typename:double
+direction	Light.h	/^	Vec3 position, direction;$/;"	m	class:Light	typeref:typename:Vec3
+directional	Light.h	/^	ambient, point, directional$/;"	e	enum:LightType
+durationMs	NeoKray.h	/^	uint32_t durationMs;$/;"	m	class:NeoKray	typeref:typename:uint32_t
+el1	utils/Pair.h	/^	T1 el1;$/;"	m	struct:Pair	typeref:typename:T1
+el2	utils/Pair.h	/^	T2 el2;$/;"	m	struct:Pair	typeref:typename:T2
+file_ppm	Canvas.h	/^	FILE *file_ppm;$/;"	m	class:Canvas	typeref:typename:FILE *
+fov	ICamera.h	/^	real_t fov;$/;"	m	class:ICamera	typeref:typename:real_t
+fps	NeoKray.h	/^	uint32_t fps;$/;"	m	class:NeoKray	typeref:typename:uint32_t
+frameTimeMs	NeoKray.h	/^	double frameTimeMs;$/;"	m	class:NeoKray	typeref:typename:double
+framesCount	NeoKray.h	/^	uint32_t framesCount;$/;"	m	class:NeoKray	typeref:typename:uint32_t
+g	Vec3.h	/^		struct { real_t r, g, b; };$/;"	m	struct:Vec3::__anond7d57e8c010a::__anond7d57e8c0308	typeref:typename:real_t
+height	Canvas.h	/^	uint32_t width, height;$/;"	m	class:Canvas	typeref:typename:uint32_t
+height	NeoKray.h	/^	uint32_t height;$/;"	m	class:NeoKray	typeref:typename:uint32_t
+height	ObjectCylinder.h	/^	real_t height;$/;"	m	class:ObjectCylinder	typeref:typename:real_t
+intensity	Light.h	/^	real_t intensity;$/;"	m	class:Light	typeref:typename:real_t
+kD	IMaterial.h	/^	real_t kD;$/;"	m	class:IMaterial	typeref:typename:real_t
+kR	IMaterial.h	/^	real_t kR;$/;"	m	class:IMaterial	typeref:typename:real_t
+kS	IMaterial.h	/^	real_t kS;$/;"	m	class:IMaterial	typeref:typename:real_t
+listLights	IScene.h	/^	List<Light*> listLights;$/;"	m	class:IScene	typeref:typename:List<Light * >
+listObjects	IScene.h	/^	List<Object*> listObjects;$/;"	m	class:IScene	typeref:typename:List<Object * >
+main	main.cpp	/^int main( int argc, char *argv[] ) {$/;"	f	typeref:typename:int
+material	IObject.h	/^	Material *material;$/;"	m	class:IObject	typeref:typename:Material *
+normal	ObjectPlane.h	/^	Vec3 normal;$/;"	m	class:ObjectPlane	typeref:typename:Vec3
+normal	ShaderRecord.h	/^	Vec3 normal;$/;"	m	struct:ShadeRecord	typeref:typename:Vec3
+operator *	Vec3.h	/^inline Vec3 Vec3::operator*(const real_t t) const {$/;"	f	class:Vec3	typeref:typename:Vec3
+operator *	Vec3.h	/^inline Vec3 operator*(const real_t t, const Vec3 &u) {$/;"	f	typeref:typename:Vec3
+operator *=	Vec3.h	/^inline const Vec3& Vec3::operator*=(const real_t t) {$/;"	f	class:Vec3	typeref:typename:const Vec3 &
+operator +	Vec3.h	/^inline Vec3 Vec3::operator+(const Vec3 &v) const {$/;"	f	class:Vec3	typeref:typename:Vec3
+operator +	Vec3.h	/^inline Vec3 Vec3::operator+(const real_t t) const {$/;"	f	class:Vec3	typeref:typename:Vec3
+operator +	Vec3.h	/^inline Vec3 operator+(const real_t t, const Vec3 &u) {$/;"	f	typeref:typename:Vec3
+operator +	Vec3.h	/^inline const Vec3& Vec3::operator+() const {$/;"	f	class:Vec3	typeref:typename:const Vec3 &
+operator +=	Vec3.h	/^inline const Vec3& Vec3::operator+=(const Vec3& v) {$/;"	f	class:Vec3	typeref:typename:const Vec3 &
+operator -	Vec3.h	/^inline Vec3 Vec3::operator-(const Vec3 &v) const {$/;"	f	class:Vec3	typeref:typename:Vec3
+operator -	Vec3.h	/^inline Vec3 Vec3::operator-(const real_t t) const {$/;"	f	class:Vec3	typeref:typename:Vec3
+operator -	Vec3.h	/^inline Vec3 operator-(const real_t t, const Vec3 &u) {$/;"	f	typeref:typename:Vec3
+operator -	Vec3.h	/^inline const Vec3 Vec3::operator-() const {$/;"	f	class:Vec3	typeref:typename:const Vec3
+operator -=	Vec3.h	/^inline const Vec3& Vec3::operator-=(const Vec3& v) {$/;"	f	class:Vec3	typeref:typename:const Vec3 &
+operator /	Vec3.h	/^inline Vec3 Vec3::operator\/(const real_t t) const {$/;"	f	class:Vec3	typeref:typename:Vec3
+operator /	Vec3.h	/^inline Vec3 operator\/(const real_t t, const Vec3 &u) {$/;"	f	typeref:typename:Vec3
+operator /=	Vec3.h	/^inline const Vec3& Vec3::operator\/=(const real_t t) {$/;"	f	class:Vec3	typeref:typename:const Vec3 &
+operator =	Vec3.h	/^inline const Vec3& Vec3::operator=(const Vec3 &v) {$/;"	f	class:Vec3	typeref:typename:const Vec3 &
+operator ==	Vec3.h	/^inline bool Vec3::operator==( const Vec3& u ) const {$/;"	f	class:Vec3	typeref:typename:bool
+operator []	utils/List.h	/^T List<T>::operator[]( unsigned int index ) const {$/;"	f	class:List	typeref:typename:T
+operator []	utils/List.h	/^T& List<T>::operator[]( unsigned int index ) {$/;"	f	class:List	typeref:typename:T &
+origin	ICamera.h	/^	Vec3 origin;$/;"	m	class:ICamera	typeref:typename:Vec3
+pixel_buf	Canvas.h	/^	Vec3 *pixel_buf;$/;"	m	class:Canvas	typeref:typename:Vec3 *
+point	Light.h	/^	ambient, point, directional$/;"	e	enum:LightType
+position	IObject.h	/^	Vec3 position;$/;"	m	class:IObject	typeref:typename:Vec3
+position	Light.h	/^	Vec3 position, direction;$/;"	m	class:Light	typeref:typename:Vec3
+projPlaneDistance	ICamera.h	/^	real_t projPlaneDistance;$/;"	m	class:ICamera	typeref:typename:real_t
+r	ObjectPlane.h	/^	Vec3 r;$/;"	m	class:ObjectPlane	typeref:typename:Vec3
+r	Vec3.h	/^		struct { real_t r, g, b; };$/;"	m	struct:Vec3::__anond7d57e8c010a::__anond7d57e8c0308	typeref:typename:real_t
+radius	ObjectCylinder.h	/^	real_t radius;$/;"	m	class:ObjectCylinder	typeref:typename:real_t
+radius	ObjectSphere.h	/^	real_t radius;$/;"	m	class:ObjectSphere	typeref:typename:real_t
+real_t	Vec3.h	/^typedef double real_t;$/;"	t	typeref:typename:double
+resHeight	ICamera.h	/^	uint32_t resHeight;$/;"	m	class:ICamera	typeref:typename:uint32_t
+resWidth	ICamera.h	/^	uint32_t resWidth;$/;"	m	class:ICamera	typeref:typename:uint32_t
+rotationPair	ICamera.h	/^	List<Pair<Axis, real_t>> rotationPair;$/;"	m	class:ICamera	typeref:typename:List<Pair<Axis,real_t>>
+specularCoefficient	Light.h	/^	real_t specularCoefficient;$/;"	m	class:Light	typeref:typename:real_t
+surfaceColor	IMaterial.h	/^	Vec3 surfaceColor;$/;"	m	class:IMaterial	typeref:typename:Vec3
+toLightDir	ShaderRecord.h	/^	Vec3 toLightDir;$/;"	m	struct:ShadeRecord	typeref:typename:Vec3
+type	Light.h	/^	LightType type;$/;"	m	class:Light	typeref:typename:LightType
+width	Canvas.h	/^	uint32_t width, height;$/;"	m	class:Canvas	typeref:typename:uint32_t
+width	NeoKray.h	/^	uint32_t width;$/;"	m	class:NeoKray	typeref:typename:uint32_t
+x	Vec3.h	/^		struct { real_t x, y, z; };$/;"	m	struct:Vec3::__anond7d57e8c010a::__anond7d57e8c0208	typeref:typename:real_t
+y	Vec3.h	/^		struct { real_t x, y, z; };$/;"	m	struct:Vec3::__anond7d57e8c010a::__anond7d57e8c0208	typeref:typename:real_t
+z	Vec3.h	/^		struct { real_t x, y, z; };$/;"	m	struct:Vec3::__anond7d57e8c010a::__anond7d57e8c0208	typeref:typename:real_t
+~CameraPinhole	CameraPinhole.h	/^	virtual ~CameraPinhole() {}$/;"	f	class:CameraPinhole
+~Canvas	Canvas.cpp	/^Canvas::~Canvas() {$/;"	f	class:Canvas
+~ICamera	ICamera.h	/^	virtual ~ICamera() {}$/;"	f	class:ICamera
+~IMaterial	IMaterial.h	/^	virtual ~IMaterial() {}$/;"	f	class:IMaterial
+~IObject	IObject.h	/^	virtual ~IObject() {}$/;"	f	class:IObject
+~IRenderer	IRenderer.h	/^	virtual ~IRenderer() {}$/;"	f	class:IRenderer
+~IScene	IScene.h	/^	virtual ~IScene() {$/;"	f	class:IScene
+~List	utils/List.h	/^List<T>::~List() {$/;"	f	class:List
+~ObjectCylinder	ObjectCylinder.h	/^	virtual ~ObjectCylinder() {}$/;"	f	class:ObjectCylinder
+~ObjectPlane	ObjectPlane.h	/^	virtual ~ObjectPlane() {}$/;"	f	class:ObjectPlane
+~ObjectSphere	ObjectSphere.h	/^	virtual ~ObjectSphere() {}$/;"	f	class:ObjectSphere
