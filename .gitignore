@@ -4,3 +4,4 @@ videos
 *.ppm
 src/*.o
 src/utils/*.o
+nkray
