@@ -2,6 +2,7 @@
 deps.mk
 videos
 *.ppm
+*.mp4
 src/*.o
 src/utils/*.o
 nkray

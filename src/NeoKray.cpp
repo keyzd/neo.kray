@@ -16,6 +16,8 @@
 #include "../Scene2.h"
 #include "../Scene3.h"
 
+#define FILE_NAME_LEN 32
+
 NeoKray::NeoKray( int argc, char *argv[] ) {
 	ReadCmdArgs( argc, argv );
 	InitTimeLine();
@@ -42,22 +44,22 @@ void NeoKray::InitTimeLine() {
 void NeoKray::MainLoop() {
 	DefaultRenderer rend;
 	CameraPinhole cam( width, height );
-	char fileName[16];
-	memset( fileName, 0, 16 );
+	char fileName[FILE_NAME_LEN];
+	memset( fileName, 0, FILE_NAME_LEN );
 
 	for( uint32_t i = 1; i <= framesCount; i++ ) {
 		Scene3 scene;
 		scene.Setup( cam, currentTimeMs / 1000.0 );
 		currentTimeMs += frameTimeMs;
 
-		sprintf( fileName, "%u.ppm", i+10000 );
-		fileName[0] = '0';
+		sprintf( fileName, "frames/%u.ppm", i+10000 );
+		fileName[7] = '0';
 
 		Canvas canvas( width, height, fileName );
 		rend.MakeImage( canvas, scene, cam );
 
 		printf("Frame %u/%u\n", i, framesCount);
-		memset( fileName, 0, 16 );
+		memset( fileName, 0, FILE_NAME_LEN );
 	}
 }
 
