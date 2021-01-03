@@ -51,7 +51,7 @@ void List<T>::ResetCount() {
 
 template <class T>
 T& List<T>::operator[]( unsigned int index ) {
-	return buf[ index];
+	return buf[ index ];
 }
 
 template <class T>

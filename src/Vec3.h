@@ -126,7 +126,7 @@ inline Vec3 Vec3::operator/(const real_t t) const {
 }
 
 inline real_t Vec3::Length() const {
-	return sqrtf(x*x+y*y+z*z);
+	return sqrt(x*x+y*y+z*z);
 }
 
 inline real_t Vec3::Dot(const Vec3 &v) const {
