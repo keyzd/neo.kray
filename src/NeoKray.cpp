@@ -15,6 +15,7 @@
 #include "../Scene1.h"
 #include "../Scene2.h"
 #include "../Scene3.h"
+#include "../Scene4.h"
 
 #define FILE_NAME_LEN 32
 
@@ -48,7 +49,7 @@ void NeoKray::MainLoop() {
 	memset( fileName, 0, FILE_NAME_LEN );
 
 	for( uint32_t i = 1; i <= framesCount; i++ ) {
-		Scene3 scene;
+		Scene4 scene;
 		scene.Setup( cam, currentTimeMs / 1000.0 );
 		currentTimeMs += frameTimeMs;
 

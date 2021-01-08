@@ -18,6 +18,7 @@ typedef IMaterial Material;
 
 class IMaterial {
 public:
+	IMaterial() : reflective(0.0) {}
 	virtual ~IMaterial() {}
 
 //	virtual Vec3 Shade( const ShadeRecord& shadeRec, const Renderer& renderer,
@@ -36,6 +37,8 @@ public:
 
 	void SetReflectivenessCoefficient( real_t coeff );
 	real_t GetReflectivenessCoefficient() const;
+
+	float reflective;
 
 protected:
 	Vec3 surfaceColor;

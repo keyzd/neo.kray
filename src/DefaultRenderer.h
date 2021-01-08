@@ -10,7 +10,7 @@ public:
 	DefaultRenderer();
 
 	virtual void MakeImage( Canvas& canvas, const Scene& scene, const Camera& camera );
-	virtual Vec3 RayTrace( const Ray& ray, const Scene& scene, const Camera& camera );
+	virtual Vec3 RayTrace( const Ray& ray, const Scene& scene, const Camera& camera, int RecDepth );
 
 protected:
 	virtual Object* FindClosestObject( const Ray& ray, const Scene& scene, const Camera& camera,

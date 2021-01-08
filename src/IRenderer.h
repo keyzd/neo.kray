@@ -11,7 +11,7 @@ class IRenderer {
 public:
 	virtual ~IRenderer() {}
 	virtual void MakeImage( Canvas& canvas, const Scene& scene, const Camera& camera ) = 0;
-	virtual Vec3 RayTrace( const Ray& ray, const Scene& scene, const Camera& camera ) = 0;
+	virtual Vec3 RayTrace( const Ray& ray, const Scene& scene, const Camera& camera, int RecDepth ) = 0;
 
 protected:
 	virtual Object* FindClosestObject( const Ray& ray, const Scene& scene, const Camera& camera,

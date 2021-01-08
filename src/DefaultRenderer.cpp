@@ -22,6 +22,8 @@ DefaultRenderer::DefaultRenderer() {
 void DefaultRenderer::MakeImage( Canvas& canvas, const Scene& scene, const Camera& camera ) {
 	srand48( time( NULL ) );
 
+	int recDepth = 1;
+
 	for( uint32_t x = 0; x < canvas.GetWidth(); x++ ) {
 		for( uint32_t y = 0; y < canvas.GetHeight(); y++ ) {
 			Vec3 color;
@@ -37,7 +39,7 @@ void DefaultRenderer::MakeImage( Canvas& canvas, const Scene& scene, const Camer
 				Vec3 sample( ray.GetDirection().x + dX, ray.GetDirection().y + dY, ray.GetDirection().z );
 				ray.SetDirection( sample );
 
-				color = RayTrace( ray, scene, camera );
+				color = RayTrace( ray, scene, camera, recDepth );
 				primaryRaySamples.Push( color );
 			}
 
@@ -50,8 +52,14 @@ void DefaultRenderer::MakeImage( Canvas& canvas, const Scene& scene, const Camer
 // 1. Find closest object for current ray (need cache of hits)
 // 2. Find intersection point (from cache of hits) and normal for closest object
 // 3. Calculate color
-Vec3 DefaultRenderer::RayTrace( const Ray& ray, const Scene& scene, const Camera& camera ) {
-	Object* closestObject = FindClosestObject( ray, scene, camera, camera.GetProjPlaneDistance(),
+Vec3 DefaultRenderer::RayTrace( const Ray& ray, const Scene& scene, const Camera& camera, int RecDepth ) {
+	real_t lenMin;
+//	if( RecDepth < 5 )
+//		lenMin = 0.7;
+//	else
+		lenMin = camera.GetProjPlaneDistance();
+
+	Object* closestObject = FindClosestObject( ray, scene, camera, lenMin,
 											   INFINITY );
 	if( closestObject == NULL ) { 
 		return scene.GetBackgroundColor();
@@ -60,9 +68,19 @@ Vec3 DefaultRenderer::RayTrace( const Ray& ray, const Scene& scene, const Camera
 	Vec3 intersectedVec;
 	closestObject->Intersect( ray, intersectedVec );
 	Vec3 normal = closestObject->NormalAt( intersectedVec );
-	Vec3 color = CalculateLight( camera, scene, normal, intersectedVec, closestObject->material );
+	Vec3 localColor = CalculateLight( camera, scene, normal, intersectedVec, closestObject->material );
 
-	return color;
+	float r = closestObject->material->reflective;
+	if( RecDepth <= 0 || r <= 0 )
+		return localColor;
+	
+	Vec3 minusD = Vec3( 0 ) - ray.GetDirection();
+	Vec3 reflectedD = minusD.Reflect( normal );
+	RecDepth--;
+	Ray reflectedRay( intersectedVec, reflectedD );
+	
+	Vec3 reflectedColor = RayTrace( reflectedRay, scene, camera, RecDepth );
+	return localColor*(1.0-r) + reflectedColor*r;
 }
 
 Vec3 DefaultRenderer::CalculateLight( const Camera& camera, const Scene& scene, const Vec3& normal,
