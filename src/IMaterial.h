@@ -40,7 +40,12 @@ public:
 
 	float reflective;
 
+	real_t cellSize;
+	void SetColor1( Vec3 a_color1 );
+	void SetColor2( Vec3 a_color2 );
+
 protected:
+	Vec3 color1, color2;
 	Vec3 surfaceColor;
 	real_t kD;
 	real_t kS;
@@ -81,5 +86,12 @@ inline real_t IMaterial::GetReflectivenessCoefficient() const {
 	return kR;
 }
 
+inline void IMaterial::SetColor1( Vec3 a_color1 ) {
+	color1 = a_color1;
+}
+
+inline void IMaterial::SetColor2( Vec3 a_color2 ) {
+	color2 = a_color2;
+}
 
 #endif

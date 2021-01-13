@@ -22,7 +22,7 @@ DefaultRenderer::DefaultRenderer() {
 void DefaultRenderer::MakeImage( Canvas& canvas, const Scene& scene, const Camera& camera ) {
 	srand48( time( NULL ) );
 
-	int recDepth = 1;
+	int recDepth = 2;
 
 	for( uint32_t x = 0; x < canvas.GetWidth(); x++ ) {
 		for( uint32_t y = 0; y < canvas.GetHeight(); y++ ) {

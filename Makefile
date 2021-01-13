@@ -8,8 +8,8 @@ SRC_MODULES := $(BASE_DIR)/main.cpp $(BASE_DIR)/NeoKray.cpp $(BASE_DIR)/Canvas.c
 			   $(BASE_DIR)/DefaultRenderer.cpp \
 			   $(BASE_DIR)/CameraPinhole.cpp \
 			   $(BASE_DIR)/ObjectSphere.cpp $(BASE_DIR)/ObjectPlane.cpp $(BASE_DIR)/ObjectCylinder.cpp \
-			   $(BASE_DIR)/MaterialPhong.cpp $(BASE_DIR)/MaterialNormalMap.cpp \
-			   Scene1.cpp Scene2.cpp Scene3.cpp Scene4.cpp
+			   $(BASE_DIR)/MaterialPhong.cpp $(BASE_DIR)/MaterialNormalMap.cpp $(BASE_DIR)/MaterialNormalMap2.cpp $(BASE_DIR)/MaterialPhongCheckmate.cpp \
+			   Scene1.cpp Scene2.cpp Scene3.cpp Scene4.cpp Scene5.cpp
 
 OBJ_MODULES = $(SRC_MODULES:.cpp=.o)
 
